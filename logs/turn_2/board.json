@@ -1,0 +1,39 @@
+{
+  "turn": 2,
+  "saved_at": "2026-03-16T22:02:16.734303",
+  "total_messages": 4,
+  "messages": [
+    {
+      "sender_id": "agent_0",
+      "sender_name": "Hoàng Tuấn",
+      "type": "public",
+      "recipient_id": null,
+      "content": "Hỡi lũ sâu bọ, đừng có mà dại dột động vào tài sản của Hoàng Tuấn này. Kẻ nào làm ta mất một xu, ta sẽ khiến cả gia tộc nó không còn một sợi tóc.",
+      "turn": 2
+    },
+    {
+      "sender_id": "agent_0",
+      "sender_name": "Hoàng Tuấn",
+      "type": "private",
+      "recipient_id": "agent_1",
+      "content": "Ngươi còn dám nhìn ta bằng con mắt nào sau lần giao kèo trước? Hãy cẩn thận bước đi của mình, đừng để ta phải đích thân dạy cho ngươi bài học về sự tôn trọng.",
+      "turn": 2
+    },
+    {
+      "sender_id": "agent_1",
+      "sender_name": "Minh Hải",
+      "type": "private",
+      "recipient_id": "agent_0",
+      "content": "Chào Hoàng Tuấn huynh, ta thấy huynh đang có một bước đi đầy tham vọng trên bản đồ. Minh Hải ta luôn ngưỡng mộ tầm nhìn xa của huynh.",
+      "turn": 2
+    },
+    {
+      "sender_id": "agent_1",
+      "sender_name": "Minh Hải",
+      "type": "private",
+      "recipient_id": "agent_2",
+      "content": "Linh Chi muội, ta biết muội là người khát khao chinh phạt. Hãy cứ yên tâm mở rộng, có ta ở đây, huynh sẽ là người giữ vững ổn định cho chúng ta.",
+      "turn": 2
+    }
+  ]
+}

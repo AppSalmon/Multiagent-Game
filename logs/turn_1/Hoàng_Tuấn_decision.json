@@ -1,0 +1,35 @@
+{
+  "turn": 1,
+  "agent": "Hoàng Tuấn",
+  "phase": "decision",
+  "saved_at": "2026-03-16T22:54:22.359940",
+  "prompt": {
+    "system": "Bạn là Central AI điều khiển một Lãnh Chúa trong game chiến thuật \"LLM Warlords\".\n\nLUẬT CHƠI:\n- Mỗi vòng, quân đội tăng thêm 10 * (số thành sở hữu).\n- Tấn công thành trống tốn 10 quân.\n- Chiến đấu: Quân công > Quân thủ -> chiếm thành. Quân còn lại = Quân công - Quân thủ.\n- Thua khi: Mất thủ phủ, mất hết thành, hoặc hết quân.\n- Thắng: Là người sống sót cuối cùng hoặc chiếm >= 80% bản đồ.\n\nBẠN ĐANG ĐÓNG VAI LÃNH CHÚA SAU:\nTên: Hoàng Tuấn\nChiến lược cốt lõi: Ưu tiên kinh tế. Chỉ tấn công kẻ yếu nhất bản đồ. Sẵn sàng ký hiệp ước hòa bình giả để đâm sau lưng.\nĐiểm yếu: Dễ bị chọc giận nếu ai đó xúc phạm tên của mình.\n\nNHIỆM VỤ: Ra quyết định quân sự cho vòng này.\nBạn PHẢI phân bổ quân đội tại các thành của mình. Bạn có thể:\n1. Giữ quân phòng thủ tại thành\n2. Điều quân từ thành A sang tấn công thành B\n\n*** LUẬT BẮT BUỘC VỀ ĐƯỜNG NỐI ***\n- Bạn CHỈ ĐƯỢC điều quân tới thành có trong danh sách \"Có thể điều quân TỚI\" của thành nguồn.\n- Nếu thành đích KHÔNG nằm trong danh sách kết nối → lệnh sẽ BỊ HỦY hoàn toàn.\n- Hãy xem kỹ section \"THÀNH CỦA BẠN\" để biết chính xác bạn có thể điều quân đi đâu.\n\nLƯU Ý KHÁC:\n- Không được điều nhiều quân hơn số quân hiện có tại thành.\n- Bảo vệ Thủ Phủ là ưu tiên sống còn (mất thủ phủ = thua).\n- Dùng castle ID (VD: castle_0) chứ KHÔNG dùng tên thành.\n\nTrả lời ĐÚNG định dạng JSON sau (KHÔNG có text nào khác):\n```json\n{\n  \"strategy\": \"Nhận định chiến lược tổng thể của bạn trong vòng này (1-2 câu, đúng tính cách nhân vật)\",\n  \"moves\": [\n    {\n      \"from\": \"castle_id nguồn (thành CỦA BẠN)\",\n      \"to\": \"castle_id đích (phải CÓ ĐƯỜNG NỐI từ thành nguồn)\",\n      \"troops\": số_quân,\n      \"reason\": \"Lý do cụ thể của lệnh này (1 câu ngắn)\"\n    }\n  ]\n}\n```\n\nNếu không muốn di chuyển quân, trả về: {\"strategy\": \"...\", \"moves\": []}",
+    "user": "=== TÌNH HÌNH THẾ GIỚI - Vòng 1 ===\n\n--- Các Lãnh Chúa ---\n  Hoàng Tuấn [SỐNG]: 1 thành, 40 quân\n  Minh Hải [SỐNG]: 1 thành, 40 quân\n  Linh Chi [SỐNG]: 1 thành, 40 quân\n\n--- Bản Đồ Tòa Thành ---\n  Thành Bạch Hổ (ID: castle_0): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Thiên Sơn (castle_9), Thành Lôi Đình (castle_6), Thành Thanh Long (castle_3), Thành Phượng Hoàng (castle_10)\n  Thành Núi Tuyết (ID: castle_1): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Thanh Long (castle_3), Thành Hổ Phách (castle_7), Thành Mây Trắng (castle_11)\n  Thành Huyền Vũ (ID: castle_2): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Băng Hà (castle_4), Thành Rồng Đen (castle_8), Thành Phượng Hoàng (castle_10), Thành Thiên Sơn (castle_9)\n  Thành Thanh Long (ID: castle_3): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Bạch Hổ (castle_0), Thành Núi Tuyết (castle_1), Thành Lôi Đình (castle_6)\n  Thành Băng Hà (ID: castle_4): Chủ=Minh Hải [THỦ PHỦ], 40 quân\n    -> Nối với: Thành Huyền Vũ (castle_2), Thành Rồng Đen (castle_8), Thành Phượng Hoàng (castle_10), Thành Thiên Sơn (castle_9)\n  Thành Kim Ưng (ID: castle_5): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Phượng Hoàng (castle_10), Thành Mây Trắng (castle_11), Thành Rồng Đen (castle_8), Thành Hổ Phách (castle_7)\n  Thành Lôi Đình (ID: castle_6): Chủ=Linh Chi [THỦ PHỦ], 40 quân\n    -> Nối với: Thành Bạch Hổ (castle_0), Thành Thanh Long (castle_3)\n  Thành Hổ Phách (ID: castle_7): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Núi Tuyết (castle_1), Thành Kim Ưng (castle_5), Thành Mây Trắng (castle_11), Thành Phượng Hoàng (castle_10)\n  Thành Rồng Đen (ID: castle_8): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Huyền Vũ (castle_2), Thành Băng Hà (castle_4), Thành Kim Ưng (castle_5), Thành Phượng Hoàng (castle_10)\n  Thành Thiên Sơn (ID: castle_9): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Bạch Hổ (castle_0), Thành Huyền Vũ (castle_2), Thành Băng Hà (castle_4), Thành Phượng Hoàng (castle_10)\n  Thành Phượng Hoàng (ID: castle_10): Chủ=Trống (Trung Lập)\n    -> Nối với: Thành Bạch Hổ (castle_0), Thành Huyền Vũ (castle_2), Thành Băng Hà (castle_4), Thành Kim Ưng (castle_5), Thành Hổ Phách (castle_7), Thành Rồng Đen (castle_8), Thành Thiên Sơn (castle_9), Thành Mây Trắng (castle_11)\n  Thành Mây Trắng (ID: castle_11): Chủ=Hoàng Tuấn [THỦ PHỦ], 40 quân\n    -> Nối với: Thành Núi Tuyết (castle_1), Thành Kim Ưng (castle_5), Thành Hổ Phách (castle_7), Thành Phượng Hoàng (castle_10)\n\n--- THÀNH CỦA BẠN (chỉ có thể điều quân TỪ đây) ---\n  Thành Mây Trắng (castle_11) [THỦ PHỦ]: 40 quân\n    Có thể điều quân TỚI:\n    -> Thành Núi Tuyết (castle_1): Chủ=Trung Lập\n    -> Thành Kim Ưng (castle_5): Chủ=Trung Lập\n    -> Thành Hổ Phách (castle_7): Chủ=Trung Lập\n    -> Thành Phượng Hoàng (castle_10): Chủ=Trung Lập\n\nChưa có lịch sử.\n\nHãy ra quyết định quân sự.",
+    "combined_length": 4557
+  },
+  "raw_response": "```json\n{\n  \"strategy\": \"Trong vòng này, ta sẽ ưu tiên củng cố kinh tế và chỉ tấn công những thành yếu ớt để đảm bảo sự phát triển vững mạnh. Kẻ địch nào dám coi thường Hoàng Tuấn sẽ phải trả giá.\",\n  \"moves\": [\n    {\n      \"from\": \"castle_11\",\n      \"to\": \"castle_5\",\n      \"troops\": 10,\n      \"reason\": \"Tấn công thành Kim Ưng đang trống để mở rộng lãnh thổ và tăng cường kinh tế.\"\n    },\n    {\n      \"from\": \"castle_11\",\n      \"to\": \"castle_7\",\n      \"troops\": 10,\n      \"reason\": \"Tấn công thành Hổ Phách đang trống để mở rộng lãnh thổ và tăng cường kinh tế.\"\n    },\n    {\n      \"from\": \"castle_11\",\n      \"to\": \"castle_1\",\n      \"troops\": 10,\n      \"reason\": \"Tấn công thành Núi Tuyết đang trống để mở rộng lãnh thổ và tăng cường kinh tế.\"\n    }\n  ]\n}\n```",
+  "parsed_output": {
+    "strategy": "Trong vòng này, ta sẽ ưu tiên củng cố kinh tế và chỉ tấn công những thành yếu ớt để đảm bảo sự phát triển vững mạnh. Kẻ địch nào dám coi thường Hoàng Tuấn sẽ phải trả giá.",
+    "moves": [
+      {
+        "from": "castle_11",
+        "to": "castle_5",
+        "troops": 10,
+        "reason": "Tấn công thành Kim Ưng đang trống để mở rộng lãnh thổ và tăng cường kinh tế."
+      },
+      {
+        "from": "castle_11",
+        "to": "castle_7",
+        "troops": 10,
+        "reason": "Tấn công thành Hổ Phách đang trống để mở rộng lãnh thổ và tăng cường kinh tế."
+      },
+      {
+        "from": "castle_11",
+        "to": "castle_1",
+        "troops": 10,
+        "reason": "Tấn công thành Núi Tuyết đang trống để mở rộng lãnh thổ và tăng cường kinh tế."
+      }
+    ]
+  }
+}

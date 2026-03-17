@@ -1,0 +1,55 @@
+{
+  "turn": 3,
+  "saved_at": "2026-03-16T22:04:25.650829",
+  "total_messages": 6,
+  "messages": [
+    {
+      "sender_id": "agent_0",
+      "sender_name": "Hoàng Tuấn",
+      "type": "public",
+      "recipient_id": null,
+      "content": "Hỡi những kẻ bám víu vào chút lãnh thổ còn sót lại, đừng quên tên ta là Hoàng Tuấn. Kẻ nào còn dám ngạo mạn sẽ chỉ thấy tro tàn.",
+      "turn": 3
+    },
+    {
+      "sender_id": "agent_0",
+      "sender_name": "Hoàng Tuấn",
+      "type": "private",
+      "recipient_id": "agent_1",
+      "content": "Minh Hải, kẻ địch của ta đang càng ngày càng lớn mạnh. Hãy cho ta biết, ngươi liệu có muốn cùng ta dọn sạch lũ chuột nhắt này không?",
+      "turn": 3
+    },
+    {
+      "sender_id": "agent_1",
+      "sender_name": "Minh Hải",
+      "type": "private",
+      "recipient_id": "agent_0",
+      "content": "Hoàng Tuấn huynh đệ, quả là một trận chiến đầy kịch tính vừa qua! Chúng ta đều thấy rõ sức mạnh của nhau rồi. Hãy cùng nhau bàn bạc một kế hoạch nhỏ để giữ vững hòa bình và thịnh vượng cho cả hai bên nhé?",
+      "turn": 3
+    },
+    {
+      "sender_id": "agent_1",
+      "sender_name": "Minh Hải",
+      "type": "private",
+      "recipient_id": "agent_2",
+      "content": "Linh Chi muội muội, ta rất nể phục ý chí chiến đấu kiên cường của muội. Ta tin rằng chúng ta có thể tìm thấy điểm chung, một liên minh thân thiện sẽ giúp cả hai cùng phát triển. Ngươi nghĩ sao?",
+      "turn": 3
+    },
+    {
+      "sender_id": "agent_2",
+      "sender_name": "Linh Chi",
+      "type": "public",
+      "recipient_id": null,
+      "content": "Thành trì của ta là bất khả xâm phạm. Kẻ nào dám bén mảng sẽ bị ta nghiền nát không thương tiếc.",
+      "turn": 3
+    },
+    {
+      "sender_id": "agent_2",
+      "sender_name": "Linh Chi",
+      "type": "private",
+      "recipient_id": "agent_1",
+      "content": "Ngươi đang chờ thời cơ? Hãy cẩn thận, kẻ yếu đuối thường chết vì sự chần chừ. Đừng làm ta thất vọng.",
+      "turn": 3
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Warlords: Lãnh Chúa Prompt</title>
+    <link rel="stylesheet" href="/static/style.css?v=3">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>LLM Warlords</h1>
+            <div class="header-controls">
+                <span id="turnDisplay" class="turn-display">Vòng 0</span>
+                <span id="phaseBadge" class="phase-badge">Chờ</span>
+                <button id="stepBtn" class="btn" disabled>Bước Tiếp</button>
+                <button id="runBtn" class="btn btn-primary" disabled>Tự Động</button>
+                <button id="stopBtn" class="btn btn-danger" disabled>Dừng</button>
+                <button id="newGameBtn" class="btn">Ván Mới</button>
+            </div>
+        </header>
+
+        <!-- Left Panel: Agents -->
+        <aside class="left-panel">
+            <div class="panel-title">Các Lãnh Chúa</div>
+            <div id="agentList"></div>
+        </aside>
+
+        <!-- Center: Map -->
+        <main class="map-area">
+            <canvas id="mapCanvas"></canvas>
+            <div id="castleTooltip" class="castle-tooltip"></div>
+        </main>
+
+        <!-- Right Panel: Chronicle -->
+        <aside class="right-panel">
+            <div class="panel-title">Biên Niên Sử</div>
+            <div id="eventsPane" class="events-pane"></div>
+        </aside>
+    </div>
+
+    <!-- Setup Modal -->
+    <div id="setupModal" class="modal-overlay">
+        <div class="modal">
+            <h2>Đúc Lãnh Chúa</h2>
+            <p class="subtitle">Thiết lập tính cách và chiến lược cho các AI Agent. Tối thiểu 2, tối đa 8 Lãnh Chúa.</p>
+
+            <div id="agentForms"></div>
+
+            <div class="modal-actions">
+                <button id="addAgentBtn" class="btn">+ Thêm Lãnh Chúa</button>
+                <button id="startGameBtn" class="btn btn-primary">Khởi Chiến!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Victory Banner -->
+    <div id="victoryBanner" class="victory-banner">
+        <h2>Chiến Thắng!</h2>
+        <p><strong id="winnerName"></strong> đã thống nhất thiên hạ!</p>
+        <br>
+        <button class="btn" onclick="game.hideVictory()">Ẩn Banner</button>
+        <button class="btn btn-primary" onclick="game.newGame()">Ván Mới</button>
+    </div>
+
+    <script src="/static/game.js?v=3"></script>
+</body>
+</html>

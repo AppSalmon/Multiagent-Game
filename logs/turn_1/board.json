@@ -1,0 +1,47 @@
+{
+  "turn": 1,
+  "saved_at": "2026-03-16T22:01:22.117311",
+  "total_messages": 5,
+  "messages": [
+    {
+      "sender_id": "agent_0",
+      "sender_name": "Hoàng Tuấn",
+      "type": "public",
+      "recipient_id": null,
+      "content": "Hỡi các thế lực yếu kém trên bản đồ này, kẻ nào dám thách thức Hoàng Tuấn sẽ phải nếm mùi thất bại!",
+      "turn": 1
+    },
+    {
+      "sender_id": "agent_0",
+      "sender_name": "Hoàng Tuấn",
+      "type": "private",
+      "recipient_id": "agent_2",
+      "content": "Ngươi có biết vị thế của mình là gì không, Linh Chi? Đừng tưởng thủ phủ của ngươi an toàn, ta luôn để mắt tới những kẻ yếu đuối.",
+      "turn": 1
+    },
+    {
+      "sender_id": "agent_1",
+      "sender_name": "Minh Hải",
+      "type": "private",
+      "recipient_id": "agent_0",
+      "content": "Hoàng Tuấn huynh đài, ta nghe danh đã lâu, mong rằng chúng ta có thể là bằng hữu trên chiến trường này. Ta tin hai ta có thể cùng nhau xây dựng một thế giới an bình.",
+      "turn": 1
+    },
+    {
+      "sender_id": "agent_1",
+      "sender_name": "Minh Hải",
+      "type": "private",
+      "recipient_id": "agent_2",
+      "content": "Linh Chi cô nương, thế giới này vốn dĩ đầy biến động, chi bằng chúng ta cùng nhau tìm kiếm một chỗ dựa vững chắc. Ta tin rằng sự hợp tác của chúng ta sẽ mang lại lợi ích cho cả hai.",
+      "turn": 1
+    },
+    {
+      "sender_id": "agent_2",
+      "sender_name": "Linh Chi",
+      "type": "public",
+      "recipient_id": null,
+      "content": "Kẻ nào dám ngáng đường ta sẽ bị nghiền nát. Chờ xem Linh Chi hành động.",
+      "turn": 1
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "current_turn": 1,
+    "phase": "combat_complete",
+    "updated_at": "2026-03-17T00:30:22.857009",
+    "game_over": false,
+    "winner_id": null
+  },
+  "agents": [
+    {
+      "id": "agent_0",
+      "name": "Hoàng Dũng",
+      "alive": true,
+      "capital_id": "castle_7",
+      "persona": "Bạo chúa quyết đoán, trọng danh dự nhưng đa nghi. Thích dùng lời lẽ bề trên.",
+      "core_directive": "Ưu tiên kinh tế. Chỉ tấn công kẻ yếu nhất bản đồ. Sẵn sàng ký hiệp ước hòa bình giả để đâm sau lưng.",
+      "flaw": "Dễ bị chọc giận nếu ai đó xúc phạm tên của mình.",
+      "num_castles": 3,
+      "total_troops": 20
+    },
+    {
+      "id": "agent_1",
+      "name": "Minh Hải",
+      "alive": false,
+      "capital_id": "castle_5",
+      "persona": "Nhà ngoại giao khôn ngoan, lời ngọt nhưng tâm sâu. Luôn tỏ ra thân thiện.",
+      "core_directive": "Xây dựng liên minh với người mạnh nhất. Không bao giờ tấn công trước. Chờ đợi thời cơ để phản bội đồng minh khi họ suy yếu.",
+      "flaw": "Quá tham lam, đôi khi mở rộng quá nhanh dẫn đến phòng thủ mỏng.",
+      "num_castles": 1,
+      "total_troops": 0
+    },
+    {
+      "id": "agent_2",
+      "name": "Linh Chi",
+      "alive": false,
+      "capital_id": "castle_11",
+      "persona": "Nữ tướng lạnh lùng, ít nói nhưng hành động quyết liệt. Khinh thường kẻ yếu đuối.",
+      "core_directive": "Tấn công chớp nhoáng (blitz). Tập trung toàn bộ lực lượng vào một hướng. Không bao giờ chia quân.",
+      "flaw": "Bỏ qua ngoại giao, dễ bị nhiều người cùng đánh.",
+      "num_castles": 1,
+      "total_troops": 0
+    }
+  ],
+  "castles": [
+    {
+      "id": "castle_0",
+      "name": "Thành Huyền Vũ",
+      "owner_id": null,
+      "owner_name": null,
+      "troops": 0,
+      "castle_type": "neutral",
+      "connections": [
+        {
+          "id": "castle_4",
+          "name": "Thành Kim Ưng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        },
+        {
+          "id": "castle_2",
+          "name": "Thành Vạn Lý",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_10",
+          "name": "Thành Thiên Sơn",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_9",
+          "name": "Thành Gió Bấc",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        }
+      ]
+    },
+    {
+      "id": "castle_1",
+      "name": "Thành Sao Mai",
+      "owner_id": null,
+      "owner_name": null,
+      "troops": 0,
+      "castle_type": "neutral",
+      "connections": [
+        {
+          "id": "castle_5",
+          "name": "Thành Sấm Sét",
+          "owner_id": "agent_1",
+          "owner_name": "Minh Hải",
+          "troops": 0
+        },
+        {
+          "id": "castle_6",
+          "name": "Thành Núi Tuyết",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        }
+      ]
+    },
+    {
+      "id": "castle_2",
+      "name": "Thành Vạn Lý",
+      "owner_id": null,
+      "owner_name": null,
+      "troops": 0,
+      "castle_type": "neutral",
+      "connections": [
+        {
+          "id": "castle_0",
+          "name": "Thành Huyền Vũ",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_9",
+          "name": "Thành Gió Bấc",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_4",
+          "name": "Thành Kim Ưng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        }
+      ]
+    },
+    {
+      "id": "castle_3",
+      "name": "Thành Hỏa Diệm",
+      "owner_id": "agent_0",
+      "owner_name": "Hoàng Dũng",
+      "troops": 10,
+      "castle_type": "conquered",
+      "connections": [
+        {
+          "id": "castle_7",
+          "name": "Thành Mây Trắng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 0
+        },
+        {
+          "id": "castle_10",
+          "name": "Thành Thiên Sơn",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_4",
+          "name": "Thành Kim Ưng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        }
+      ]
+    },
+    {
+      "id": "castle_4",
+      "name": "Thành Kim Ưng",
+      "owner_id": "agent_0",
+      "owner_name": "Hoàng Dũng",
+      "troops": 10,
+      "castle_type": "conquered",
+      "connections": [
+        {
+          "id": "castle_0",
+          "name": "Thành Huyền Vũ",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_2",
+          "name": "Thành Vạn Lý",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_3",
+          "name": "Thành Hỏa Diệm",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        },
+        {
+          "id": "castle_10",
+          "name": "Thành Thiên Sơn",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_9",
+          "name": "Thành Gió Bấc",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_7",
+          "name": "Thành Mây Trắng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 0
+        }
+      ]
+    },
+    {
+      "id": "castle_5",
+      "name": "Thành Sấm Sét",
+      "owner_id": "agent_1",
+      "owner_name": "Minh Hải",
+      "troops": 0,
+      "castle_type": "capital",
+      "connections": [
+        {
+          "id": "castle_1",
+          "name": "Thành Sao Mai",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_6",
+          "name": "Thành Núi Tuyết",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_11",
+          "name": "Thành Biển Đông",
+          "owner_id": "agent_2",
+          "owner_name": "Linh Chi",
+          "troops": 0
+        },
+        {
+          "id": "castle_8",
+          "name": "Thành Thanh Long",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        }
+      ]
+    },
+    {
+      "id": "castle_6",
+      "name": "Thành Núi Tuyết",
+      "owner_id": null,
+      "owner_name": null,
+      "troops": 0,
+      "castle_type": "neutral",
+      "connections": [
+        {
+          "id": "castle_1",
+          "name": "Thành Sao Mai",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_5",
+          "name": "Thành Sấm Sét",
+          "owner_id": "agent_1",
+          "owner_name": "Minh Hải",
+          "troops": 0
+        },
+        {
+          "id": "castle_8",
+          "name": "Thành Thanh Long",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_11",
+          "name": "Thành Biển Đông",
+          "owner_id": "agent_2",
+          "owner_name": "Linh Chi",
+          "troops": 0
+        }
+      ]
+    },
+    {
+      "id": "castle_7",
+      "name": "Thành Mây Trắng",
+      "owner_id": "agent_0",
+      "owner_name": "Hoàng Dũng",
+      "troops": 0,
+      "castle_type": "capital",
+      "connections": [
+        {
+          "id": "castle_3",
+          "name": "Thành Hỏa Diệm",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        },
+        {
+          "id": "castle_10",
+          "name": "Thành Thiên Sơn",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_4",
+          "name": "Thành Kim Ưng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        }
+      ]
+    },
+    {
+      "id": "castle_8",
+      "name": "Thành Thanh Long",
+      "owner_id": null,
+      "owner_name": null,
+      "troops": 0,
+      "castle_type": "neutral",
+      "connections": [
+        {
+          "id": "castle_5",
+          "name": "Thành Sấm Sét",
+          "owner_id": "agent_1",
+          "owner_name": "Minh Hải",
+          "troops": 0
+        },
+        {
+          "id": "castle_6",
+          "name": "Thành Núi Tuyết",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_11",
+          "name": "Thành Biển Đông",
+          "owner_id": "agent_2",
+          "owner_name": "Linh Chi",
+          "troops": 0
+        }
+      ]
+    },
+    {
+      "id": "castle_9",
+      "name": "Thành Gió Bấc",
+      "owner_id": null,
+      "owner_name": null,
+      "troops": 0,
+      "castle_type": "neutral",
+      "connections": [
+        {
+          "id": "castle_0",
+          "name": "Thành Huyền Vũ",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_2",
+          "name": "Thành Vạn Lý",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_4",
+          "name": "Thành Kim Ưng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        },
+        {
+          "id": "castle_10",
+          "name": "Thành Thiên Sơn",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_11",
+          "name": "Thành Biển Đông",
+          "owner_id": "agent_2",
+          "owner_name": "Linh Chi",
+          "troops": 0
+        }
+      ]
+    },
+    {
+      "id": "castle_10",
+      "name": "Thành Thiên Sơn",
+      "owner_id": null,
+      "owner_name": null,
+      "troops": 0,
+      "castle_type": "neutral",
+      "connections": [
+        {
+          "id": "castle_0",
+          "name": "Thành Huyền Vũ",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_3",
+          "name": "Thành Hỏa Diệm",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        },
+        {
+          "id": "castle_4",
+          "name": "Thành Kim Ưng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 10
+        },
+        {
+          "id": "castle_7",
+          "name": "Thành Mây Trắng",
+          "owner_id": "agent_0",
+          "owner_name": "Hoàng Dũng",
+          "troops": 0
+        },
+        {
+          "id": "castle_9",
+          "name": "Thành Gió Bấc",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        }
+      ]
+    },
+    {
+      "id": "castle_11",
+      "name": "Thành Biển Đông",
+      "owner_id": "agent_2",
+      "owner_name": "Linh Chi",
+      "troops": 0,
+      "castle_type": "capital",
+      "connections": [
+        {
+          "id": "castle_5",
+          "name": "Thành Sấm Sét",
+          "owner_id": "agent_1",
+          "owner_name": "Minh Hải",
+          "troops": 0
+        },
+        {
+          "id": "castle_6",
+          "name": "Thành Núi Tuyết",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_8",
+          "name": "Thành Thanh Long",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        },
+        {
+          "id": "castle_9",
+          "name": "Thành Gió Bấc",
+          "owner_id": null,
+          "owner_name": null,
+          "troops": 0
+        }
+      ]
+    }
+  ],
+  "chronicles": [
+    {
+      "turn": 1,
+      "events": [
+        "Hoàng Dũng thu hoạch +10 quân (1 thành)",
+        "Minh Hải thu hoạch +10 quân (1 thành)",
+        "Linh Chi thu hoạch +10 quân (1 thành)",
+        "[CHIẾN LƯỢC] Hoàng Dũng: Ta sẽ củng cố kinh tế bằng cách chiếm các thành trống trước. Minh Hải và Linh Chi còn non nớt, ta sẽ nhắm vào kẻ yếu nhất sau khi mở rộng.",
+        "[LỆNH] Hoàng Dũng: Điều 20 quân từ Thành Mây Trắng → Thành Kim Ưng",
+        "  └> Lý do: Chiếm thành Kim Ưng để mở rộng kinh tế và kiểm soát khu vực.",
+        "[LỆNH] Hoàng Dũng: Điều 20 quân từ Thành Mây Trắng → Thành Hỏa Diệm",
+        "  └> Lý do: Chiếm thành Hỏa Diệm để tăng cường lợi thế kinh tế.",
+        "[CHIẾN LƯỢC] Minh Hải: Tôi sẽ giữ vững phòng thủ và chờ đợi cơ hội. Chưa có thông tin về liên minh hay kẻ thù rõ ràng, việc tấn công trước là quá rủi ro. Tôi sẽ tập trung củng cố Thủ Phủ và quan sát động thái của các Lãnh Chúa khác.",
+        "[CHIẾN LƯỢC] Linh Chi: Tập trung toàn lực tấn công chớp nhoáng vào thành Sấm Sét của Minh Hải để loại bỏ mối đe dọa sớm nhất, theo đúng chiến lược blitz không chia quân.",
+        "[LỆNH] Linh Chi: Điều 40 quân từ Thành Biển Đông → Thành Sấm Sét",
+        "  └> Lý do: Tấn công trực diện vào thủ phủ địch để giành lợi thế ban đầu.",
+        "TRẬN CHIẾN tại Thành Kim Ưng: Hoàng Dũng (20) đánh bại Trung Lập (0). Thành bị chiếm! Còn 10 quân.",
+        "TRẬN CHIẾN tại Thành Hỏa Diệm: Hoàng Dũng (20) đánh bại Trung Lập (0). Thành bị chiếm! Còn 10 quân.",
+        "TRẬN CHIẾN tại Thành Sấm Sét: Linh Chi (40) tấn công Minh Hải (40). Phòng thủ giữ vững! Còn 0 quân thủ.",
+        "*** Minh Hải ĐÃ BỊ LOẠI KHỎI CUỘC CHƠI! ***",
+        "*** Linh Chi ĐÃ BỊ LOẠI KHỎI CUỘC CHƠI! ***"
+      ]
+    }
+  ]
+}
